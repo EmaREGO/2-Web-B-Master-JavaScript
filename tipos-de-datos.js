@@ -1,0 +1,28 @@
+let uno = 42;
+let dos = "'Veinticinco'";
+let tres = -666;
+let cuatro = true;
+let cinco = 0;
+let seis = ' " ';
+let siete = null;
+let ocho = undefined;
+let nueve = "FALSE";
+
+console.log(uno);  
+console.log(typeof uno);
+console.log(dos);
+console.log(typeof dos);
+console.log(tres);  
+console.log(typeof tres);
+console.log(cuatro);
+console.log(typeof cuatro);
+console.log(cinco);
+console.log(typeof cinco);
+console.log(seis); 
+console.log(typeof seis);
+console.log(siete); 
+console.log(typeof siete);
+console.log(ocho); 
+console.log(typeof ocho);
+console.log(nueve);  
+console.log(typeof nueve);
