@@ -6,6 +6,7 @@ let cinco = 0;
 let seis = ' " ';
 let siete = null;
 let ocho = undefined;
+let ochodos;
 let nueve = "FALSE";
 
 console.log(uno);  
@@ -24,5 +25,7 @@ console.log(siete);
 console.log(typeof siete);
 console.log(ocho); 
 console.log(typeof ocho);
+console.log(ochodos);
+console.log(typeof ochodos);
 console.log(nueve);  
 console.log(typeof nueve);
