@@ -56,3 +56,13 @@ console.log(10 != '10');
 console.log(10 !== '10');
 //Es mas recomendado la comparacion estricta para evitar el tipo de conversion automatica
 //Para evitar problemas futuros
+
+console.log(valor1 + 2);
+valor1 += 4;
+valor2 = valor2 - 8
+valor2 -= 8;
+console.log(valor1);
+
+//EL modulo % devuelve el restante dde una division
+// a % b
+console.log(8 % 2);
