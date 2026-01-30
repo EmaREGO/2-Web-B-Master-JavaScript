@@ -1,4 +1,4 @@
-let edad = 20;
+/* let edad = 20;
 let tieneIne = false;
 
 if (edad >= 18) {
@@ -25,4 +25,18 @@ if (edad >= 18 && tieneIne ){
     console.log("Puedes votar");
 } else {
     console.log("No puedes votar");
+} */
+
+let nota = Number(prompt("Ingrese calificacion a asignar: "));
+document.writeln("Su calificación es: " + nota);
+
+if (nota >= 90 ) {
+    document.writeln(" Excelente");
+} else if ( nota >= 75 && nota <= 89){
+    document.writeln("Bien");
+} else if ( nota >= 60 && nota <= 74){
+    document.writeln(" Suficiente");
+} else if (nota < 60 ) {
+    document.writeln(" No aprueba");
 }
+
