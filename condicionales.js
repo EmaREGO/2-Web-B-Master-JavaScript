@@ -27,7 +27,7 @@ if (edad >= 18 && tieneIne ){
     console.log("No puedes votar");
 } */
 
-let nota = Number(prompt("Ingrese calificacion a asignar: "));
+/* let nota = Number(prompt("Ingrese calificacion a asignar: "));
 document.writeln("Su calificación es: " + nota);
 
 if (nota >= 90 ) {
@@ -39,9 +39,9 @@ if (nota >= 90 ) {
 } else if (nota < 60 ) {
     document.writeln(" No aprueba");
 }
-
-
-let numero = prompt('ing numero');
+ */
+/* 
+let numero = Number(prompt('ing numero'));
 numero = parseInt(numero);
 
 if (numero % 2 === 0) {
@@ -51,7 +51,7 @@ if (numero % 2 === 0) {
 }
 
 console.log();
-
+ */
 let esPremium = false;
 let totalCompra = 1200;
 let esFinDeSemana = true;
