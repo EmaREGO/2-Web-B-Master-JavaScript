@@ -40,3 +40,24 @@ if (nota >= 90 ) {
     document.writeln(" No aprueba");
 }
 
+
+let numero = prompt('ing numero');
+numero = parseInt(numero);
+
+if (numero % 2 === 0) {
+    console.log('Es divisible entre 2');
+} else {
+    console.log('No es divisible entre 2');
+}
+
+console.log();
+
+let esPremium = false;
+let totalCompra = 1200;
+let esFinDeSemana = true;
+
+if (esPremium = true || (totalCompra > 1000 && esFinDeSemana)) {//Entre parentesis porque esos dossi tiene que ser obligatorios
+    console.log('Descuento aplicado');
+} else {
+    console.log('No aplica el descuento');
+}
