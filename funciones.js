@@ -81,3 +81,56 @@ Cuando NO utilizar funciones anonimas
 -Necesita claridad
 
 */
+
+//MAP Y FILTER
+
+function mascotas(a,b,c){ //Parametros
+    console.log("Nombres de las mascotas: ", a + b + c);
+}
+
+mascotas('Puppy', 'Bombon', 'Milaneso'); //Valores
+
+//Crear 3 funciones
+//Una para calcular el area de un triangulo
+
+
+//Area de triangulo
+
+const areaTriangulo = (base , altura) => { 
+    return (base * altura) /2;
+}
+
+console.log(areaTriangulo(10,5));
+
+// Verificar si un numero es primo
+
+let num1 = 1;
+let num2 = 5;
+
+function primo( num2 ) {
+    if ( num2 %2 === 0  ){
+        return("Tu numero no es primo");
+    } else {
+        return("Tu numero es primo");
+    }
+}
+
+console.log(primo(num2));
+console.log(primo(num1));
+
+let a = 0;
+let b = 1;
+let c = [];
+
+function generarFibonacci(n) {
+    let s = 1;
+    let p ;
+    for (let i = 0; i < n; i++){
+        p = i + s++;
+        console.log(p);
+        i = i++;
+    }
+}
+
+console.log(generarFibonacci(20));
+
