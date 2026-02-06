@@ -92,20 +92,6 @@ for (let i = 0; i < listaDeSuper.length; i++){
 console.log("Total de productos:", listaDeSuper.length)
 
 
-let listaSuper = [];
-let producto = "Inicio";
 
-while (producto !== "") {
-    producto = prompt('Ingresa un producto.')
-
-    if (producto !== ""){
-        listaSuper.push(producto);
-    }
-}
-
-for (let indice = 0; indice < listaSuper.length; indice++){
-    console.log((indice+1) + ". " + listaSuper[indice]);
-}
-console.log("Total de la lista: ",listaSuper.length);
 
 
