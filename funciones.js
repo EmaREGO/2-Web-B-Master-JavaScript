@@ -134,3 +134,17 @@ function generarFibonacci(n) {
 
 console.log(generarFibonacci(20));
 
+function gFibonacci() {
+    var fibonacci[0];
+    fib
+    for (let i = 0; i < n; i++){
+        p = i + s++;
+        console.log(p);
+        i = i++;
+    }
+}
+
+
+
+
+
