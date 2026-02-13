@@ -9,9 +9,14 @@ console.log(texto);
 const caja = document.getElementById("caja");
 console.log(caja);
 
+
+
 const btnTexto = document.getElementById("btnTexto");
 const btnColor = document.getElementById("btnColor");
 const btnOcultar = document.getElementById("btnOcultar");
+const btnClase = document.getElementById("btnClase");
+
+// El evento addEventListener esta escuchando que haga click
 
 // Cambiar texto
 btnTexto.addEventListener("click", () => {
@@ -32,3 +37,10 @@ btnOcultar.addEventListener("click", () => {
         caja.style.display = 'none';
     }
 });
+
+// Cambiar de clase CSS
+btnClase.addEventListener("click", () => {
+    caja.classList.toggle("activa"); //classList toggle cambia el estado visual
+});
+
+
