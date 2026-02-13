@@ -1,3 +1,4 @@
+/*
 //Este es un comentario de JS
 
 //Tipos de datos
@@ -68,9 +69,10 @@ console.log(typeof id);
 /* Se pone ; al final de cada linea de codigo 
 Por buenas practicas y evitar errores
 Hay que hacer un buen uso de comentarios
-*/
-/* Hoola
-Hola */
+
+
 
 let a = 'Pera';
 let fruta = 'Mango'; //Usar nombre descriptivos para las variables
+*/
+

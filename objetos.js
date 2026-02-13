@@ -33,14 +33,18 @@ const disco = {
 
     //Eliminar cancion
     eliminarCancion(nombre){
-        this.canciones.pop
+    this.canciones = this.canciones.filter(cancion => cancion !== nombre);
+    console.log(`Cancion eliminada ${nombre} correctamente`);
     },
 
     //Cambiar estado de disco a NO disponible
-    cambiarEstado(disponible){
-
+    cambiarDisponible() {
+    this.disponible = false;
     }
 }
+disco.eliminarCancion('POWER');
+disco.cambiarDisponible();
+
 
 //Acceder a los datos con notacion de punto
 console.log(disco.artista);
