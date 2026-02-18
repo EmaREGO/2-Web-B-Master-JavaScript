@@ -1,78 +1,35 @@
-/*
-//Este es un comentario de JS
+// Paso uno: Seleccionar los elementos que voy a ocupar
+let itemInput = document.getElementById('itemInput'); //Cajita
+let addItemButton = document.getElementById('addItemButton');
+let itemList = document.getElementById('itemList');
 
-//Tipos de datos
+//preventdefault evita que se recargue la pagina 
+//Paso dos: Las acciones que quiero que haga crear funcion
 
-//Number: enteros y decimales
+function addItemButtonClick(){
+    //Necesito guardar la informacion que voy trayendo
+    let itemText = itemInput.value; //Valor que guarda la cajita
 
+    let newItem = document.createElement('li'); //Le vamos a estar agregando el texto
 
-let edad = 24;
-let precio = 199.99;
+    //Crear un elemento span
+    let textSpan = document.createElement('span');
+    textSpan.textContent = itemText; 
+    newItem.appendChild(textSpan)
 
-console.log("Tipo de dato Number:");
-console.log(edad);
-console.log(precio);
-//oye, dime el type of de "edad"
-console.log(typeof edad);
-console.log(typeof precio);
+    //Crear el boton eliminar
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Eliminar';
+    
+    deleteButton.addEventListener('click', function() {
+        newItem.remove(); //No le hemos dicho donde se va a poner
+    });
 
-// String (texto) cajita = variable
-let nombre = "Ana";
-let saludo = "Hola mundo";
-console.log("Tipo de dato String:");
-console.log(nombre);
-console.log(saludo);
-console.log(typeof nombre);
-console.log(typeof saludo);
+    newItem.appendChild(deleteButton);
+    itemList.appendChild(newItem);
+    itemInput.value = '';
+}
 
-//Boolean (verdadero o falso)
-let esMayorDeEdad = true;
-let tienePermiso = false;
-console.log('Tipo de dato Boolean:');
-console.log(esMayorDeEdad);
-console.log(tienePermiso)
-console.log(typeof esMayorDeEdad);
-
-
-//Undefined (Es variable declarada sin valor)
-let telefono;
-console.log("Tipo de dato Undefined:");
-console.log(telefono);
-console.log(typeof telefono);
-
-// Null (valor intencionalmente vacio) NO ES UN OBJETO, SOLO DICE QUE HAY UNA AUSENCIA INTENCIONAL
-console.log("Tipo de dato Null:");
-let direccion = null;
-console.log(direccion);
-console.log(typeof direccion);
-// Sale Object porque es un error historico que no se corrigio.
-
-//Object (estructura de datos con propiedades)
-let persona = {
-    nombre: 'Diego',
-    edad: '22',
-    ciudad: 'CDMX',
-};
-
-console.log("Tipo de dato Object:");
-console.log(typeof persona);
-console.log(persona);
-
-//Nos sirve para saber que es lo que pasa dentro de la web
-
-//symbol (identificador unico)
-let id = Symbol('id');
-console.log("Tipo de datoo Symbol:");
-console.log(id);
-console.log(typeof id);
-
-/* Se pone ; al final de cada linea de codigo 
-Por buenas practicas y evitar errores
-Hay que hacer un buen uso de comentarios
-
-
-
-let a = 'Pera';
-let fruta = 'Mango'; //Usar nombre descriptivos para las variables
-*/
+//Agregamos el evento escuchador click y le asignamos nuestra funcion que creamos
+addItemButton.addEventListener('click', addItemButtonClick);
 
