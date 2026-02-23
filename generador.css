@@ -1,0 +1,152 @@
+/* ==========================================
+   1. VARIABLES Y RESETEO GENERAL
+========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #14131B; /* Fondo oscuro moderno */
+    color: #E6E5EA; /* Texto gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-principal {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h4 {
+    text-align: center;
+    color: #817D92;
+    font-size: 20px;
+}
+
+/* ==========================================
+   2. PANTALLA DE RESULTADO
+========================================== */
+.pantalla-resultado {
+    background-color: #24232C;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#passwordGenerated {
+    background: transparent;
+    border: none;
+    color: #A4FFAF; /* Verde neón para la contraseña */
+    font-size: 24px;
+    font-weight: bold;
+    outline: none;
+    width: 80%;
+}
+
+#btnCopiar {
+    color: #A4FFAF; /* Color del icono */
+    transition: transform 0.2s;
+}
+
+#btnCopiar:hover {
+    transform: scale(1.1); /* Efecto de crecer al pasar el ratón */
+    color: #E6E5EA;
+}
+
+/* ==========================================
+   3. CONTROLES Y OPCIONES
+========================================== */
+.controles {
+    background-color: #24232C;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.longitud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#characterLength {
+    color: #A4FFAF;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Ocultar los saltos de línea <br> y estilizar casillas */
+.opciones-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.opciones-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   4. SECCIÓN DE FUERZA Y CAJAS
+========================================== */
+.fuerza-seccion {
+    background-color: #18171F;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fuerza-seccion p {
+    color: #817D92;
+    font-weight: bold;
+}
+
+/* Tus clases de las cajas de fuerza */
+.caja {
+    display: inline-block;
+    width: 12px;
+    height: 28px;
+    border: 2px solid #E6E5EA;
+    margin-left: 8px;
+}
+.rojo { background-color: #F64A4A; border-color: #F64A4A; }
+.amarillo { background-color: #F8CB63; border-color: #F8CB63; }
+.verde { background-color: #A4FFAF; border-color: #A4FFAF; }
+
+/* ==========================================
+   5. BOTÓN GENERAR
+========================================== */
+#btnGenerateP {
+    background-color: #A4FFAF;
+    color: #24232C;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#btnGenerateP:hover {
+    background-color: transparent;
+    color: #A4FFAF;
+    border: 2px solid #A4FFAF;
+}

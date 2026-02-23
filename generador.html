@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generador.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h4>Password Generator</h4>
+
+        <div class="pantalla-resultado"> 
+            <input type="text" readonly id="passwordGenerated">
+            <span id="btnCopiar" style="cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </span>
+        </div>
+
+        <div class="controles">
+            <div class="longitud-header">
+                <p>Character Length</p>
+                <span id="characterLength">10</span>
+            </div>
+            
+            <input type="range" value="10" min="0" max="20" id="rangeCharacterLength">
+            
+            <div class="opciones-checkbox">
+                <label><input type="checkbox" id="uppercaseLetters"> Include Uppercase Letters</label>
+                <label><input type="checkbox" id="lowercaseLetters"> Include Lowercase Letters</label>
+                <label><input type="checkbox" id="incNumbers"> Include Numbers</label>
+                <label><input type="checkbox" id="incSymbols"> Include Symbols</label>
+            </div>
+
+            <div class="fuerza-seccion">
+                <p>STRENGTH</p>
+                <span id="strengthLevel"></span>
+            </div>
+
+            <button id="btnGenerateP">GENERATE <span>→</span></button>
+        </div>
+    </div>
+    <script src="generador.js"></script>
+</body>
+</html>

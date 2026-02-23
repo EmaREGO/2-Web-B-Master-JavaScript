@@ -1,0 +1,121 @@
+body{
+    font-family: sans-serif;
+    background-color: #f4f6f9;
+    color: #1d1d1f;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+#titulo{
+    display: flex;
+    justify-content:center;
+}
+
+h2{
+    display: flex;
+    justify-content:center;
+}
+
+#form-secction {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#actividad, #prioridad {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    background-color: #f5f5f7;
+    margin-left: 10px;
+    margin-right: 15px;
+    transition: 0.3s;
+    outline: none;
+} 
+
+#actividad:focus, #prioridad:focus {
+    border-color: #0071e3;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+}
+
+#actividad {
+    width: 350px;
+}
+
+
+#list-secctions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+#list-secctions div{
+    background-color: white;
+    border: 0px solid lightgray;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#list-secctions li {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+#btn-agregar{
+    background-color: #0071e3;
+    color: white;
+    display: inline-block;
+    padding: 11px 25%;
+    border: 1px solid #0071e3;
+    border-radius: 980px;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#btn-agregar:hover {
+    background-color: #0077ed;
+}
+
+button{
+    background-color: #0071e3;
+    color: white;
+    display: inline-block;
+    padding: 11px;
+    border: 1px solid #0071e3;
+    border-radius: 22px;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c4d8f7;
+}
+
+.punto {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.punto-rojo { background-color: #ff3b30; }
+.punto-amarillo { background-color: #ffcc00; }
+.punto-verde { background-color: #34c759; }
+.punto-azul { background-color: #007aff; }

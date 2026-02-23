@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pendientes.css">
+    <title>Cosas por hacer.</title>
+</head>
+<body>
+    <main>
+        <h1 id="titulo">Matriz de actividades</h1>
+        <section id="form-secction">
+            <form action="" id="frmPendientes">
+                <label for="actividad">Nueva actividad:</label>
+                <input type="text" id="actividad" name="actividad">
+                <select name="prioridad" id="prioridad">
+                    <option value="opcUrgentes">Urgentes</option>
+                    <option value="opcImportantes">Importantes</option>
+                    <option value="opcParaDespues">Para Después</option>
+                    <option value="opcSiguienteSemana">Siguiente Semana</option>
+                </select>
+                <br>
+                <br>
+                <input id="btn-agregar" type="submit" value="Agregar">
+            </form>
+        </section>
+        <section id="list-secctions">
+            <div>
+                <h2><span class="punto punto-rojo"></span>Urgentes</h2>
+                <ul id="cajaUrgentes"></ul>
+            </div>
+            <div>
+                <h2><span class="punto punto-amarillo"></span>Importantes</h2>
+                <ul id="cajaImportantes"></ul>
+            </div>
+            <div>
+                <h2><span class="punto punto-verde"></span>Para Después</h2>
+                <ul id="cajaParaDespues"></ul>
+            </div>
+            <div>
+                <h2><span class="punto punto-azul"></span>Siguiente Semana</h2>
+                <ul id="cajaSiguienteSemana"></ul>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="pendientes.js"></script>
+</html>
