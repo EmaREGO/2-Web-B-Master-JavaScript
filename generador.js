@@ -84,6 +84,6 @@ function calcularFuerza() {
         strengthLevel.innerHTML = '<div class="caja amarillo"></div><div class="caja amarillo"></div><div class="caja"></div>';
     } else {
         strengthLevel.innerHTML = '<div class="caja verde"></div><div class="caja verde"></div><div class="caja verde"></div>';
-    }
+    } //Botones para el nivel de fuerza del password
 }
 

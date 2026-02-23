@@ -1,6 +1,4 @@
-/* ==========================================
-   1. VARIABLES Y RESETEO GENERAL
-========================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,9 +28,6 @@ h4 {
     font-size: 20px;
 }
 
-/* ==========================================
-   2. PANTALLA DE RESULTADO
-========================================== */
 .pantalla-resultado {
     background-color: #24232C;
     padding: 15px 25px;
@@ -44,7 +39,7 @@ h4 {
 #passwordGenerated {
     background: transparent;
     border: none;
-    color: #A4FFAF; /* Verde neón para la contraseña */
+    color: #A4FFAF; 
     font-size: 24px;
     font-weight: bold;
     outline: none;
@@ -52,18 +47,15 @@ h4 {
 }
 
 #btnCopiar {
-    color: #A4FFAF; /* Color del icono */
+    color: #A4FFAF; 
     transition: transform 0.2s;
 }
 
 #btnCopiar:hover {
-    transform: scale(1.1); /* Efecto de crecer al pasar el ratón */
+    transform: scale(1.1); 
     color: #E6E5EA;
 }
 
-/* ==========================================
-   3. CONTROLES Y OPCIONES
-========================================== */
 .controles {
     background-color: #24232C;
     padding: 25px;
@@ -84,7 +76,7 @@ h4 {
     font-weight: bold;
 }
 
-/* Ocultar los saltos de línea <br> y estilizar casillas */
+
 .opciones-checkbox {
     display: flex;
     flex-direction: column;
@@ -100,9 +92,6 @@ h4 {
     cursor: pointer;
 }
 
-/* ==========================================
-   4. SECCIÓN DE FUERZA Y CAJAS
-========================================== */
 .fuerza-seccion {
     background-color: #18171F;
     padding: 15px 25px;
@@ -117,7 +106,6 @@ h4 {
     font-weight: bold;
 }
 
-/* Tus clases de las cajas de fuerza */
 .caja {
     display: inline-block;
     width: 12px;
@@ -129,9 +117,7 @@ h4 {
 .amarillo { background-color: #F8CB63; border-color: #F8CB63; }
 .verde { background-color: #A4FFAF; border-color: #A4FFAF; }
 
-/* ==========================================
-   5. BOTÓN GENERAR
-========================================== */
+
 #btnGenerateP {
     background-color: #A4FFAF;
     color: #24232C;
