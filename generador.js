@@ -1,3 +1,5 @@
+//Objetivo
+//El objetivo es crear un sitio que nos permita generar una contraseña segura, basado en el proyecto de frontend mentor:
 const controlRangeCharacter = document.getElementById("rangeCharacterLength");
 const showCharacterLength = document.getElementById("characterLength");
 const btnGenerateP = document.getElementById("btnGenerateP");
