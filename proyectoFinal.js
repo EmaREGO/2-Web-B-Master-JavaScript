@@ -54,11 +54,12 @@ function dibujarComentario(infoComentario) {
     btnEditar.classList.add("btn-editar");
     btnBorrar.textContent = ('Eliminar');
     btnEditar.textContent = ('Editar');
-    nuevoComentario.innerHTML = infoComentario.texto + " " +" <span class='fecha'>" + infoComentario.fecha + "</span>"; 
+    nuevoComentario.innerHTML = "<span class='texto-comentario'>" + infoComentario.texto + "</span> <span class='fecha'>" + infoComentario.fecha + "</span>";    
     cajaComentario.appendChild(nuevoComentario);
     nuevoComentario.appendChild(btnBorrar);
     nuevoComentario.appendChild(btnEditar);
     input.value = ("");
+    input.style.height = "auto";
 
     btnBorrar.addEventListener("click", (e) => { 
         e.preventDefault();
@@ -71,6 +72,8 @@ function dibujarComentario(infoComentario) {
         e.preventDefault();
         idEditando = infoComentario.id;
         input.value = infoComentario.texto;
+        input.style.height = "auto";
+        input.style.height = (input.scrollHeight) + "px";
         btnCancelar.style.display = "inline-block";
         document.getElementById("btnSubirComentario").innerText= "Guardar Cambios";
     });
@@ -78,9 +81,15 @@ function dibujarComentario(infoComentario) {
     btnCancelar.addEventListener("click",  (e) => {
         e.preventDefault();
         input.value = "";
+        input.style.height = "auto";
         idEditando = null;
         document.getElementById("btnSubirComentario").innerText = "Enviar";
         btnCancelar.style.display = "none";
     });
+
+input.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+});
 
 
